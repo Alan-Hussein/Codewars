@@ -1,0 +1,17 @@
+/* 
+Complete the solution so that the function will break up camel casing, using a space between words.
+
+Example
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
+
+*/
+
+function soloution(s) {
+return s.replace(/([A-Z])/g, ' $1')
+}
+
+console.log(soloution("camelCasing")); // "camel Casing"
+console.log(soloution("identifier"));  // "identifier"
+console.log(soloution(""));            // ""
